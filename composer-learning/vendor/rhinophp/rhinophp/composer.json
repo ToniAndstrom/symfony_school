@@ -1,0 +1,15 @@
+{
+  "name": "rhinophp/rhinophp",
+  "authors": [
+    {
+      "name": "Santosh Kalwar",
+      "email": "santoshkalwar@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "rhinophp\\rhinophp\\": "."
+    }
+  }
+}

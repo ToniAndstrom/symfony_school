@@ -1,0 +1,11 @@
+{
+    "require": {
+        "rhinophp/rhinophp": "^1.0",
+        "symfony/skeleton": "^7.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    }
+}

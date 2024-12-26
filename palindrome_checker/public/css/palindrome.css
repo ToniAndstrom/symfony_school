@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem;
+    width: 20%;
+    height: 30rem;
+    background-color: darkblue;
+    color:white;
+    box-shadow: 10px 10px blue,-10px -10px blue, 20px 20px dodgerblue, -20px -20px dodgerblue ,30px 30px deepskyblue
+    , -30px -30px deepskyblue;
+}
+label, input, h1{
+    margin:2rem;
+}
+input{
+    height: 2rem;
+    border-radius: 10px;
+   
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}

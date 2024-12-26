@@ -1,0 +1,30 @@
+{% extends "base.html.twig"%}
+
+{% block title %}
+	Palindrome checker
+{% endblock %}
+
+{%  block body %}
+	<main class="container">
+		<h1>Palindrome Checker</h1>
+
+		<div>
+			<label class="label" for "component-name">
+				Enter your word below
+			</label>
+			<form method="get" action="{{path("palindrome_checker")}}">
+				<input type="text" name="word" class="input" id="word" autocomplete="off"/>
+			</form>
+		</div>
+		{% if word == palindrome %}
+			<p>{{word}}
+				is a palindrome</p>
+		{% else %}
+			<p>{{word}}
+				is not a palindrome</p>
+		{% endif %}
+
+	</main>
+	
+
+{% endblock %}

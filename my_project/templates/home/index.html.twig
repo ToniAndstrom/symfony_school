@@ -1,0 +1,15 @@
+{% extends "base.html.twig"%}
+
+{% block title %}Home Page
+{% endblock %}
+
+{%  block body %}
+
+	<main class="container">
+		<p>This is the Home Page</p>
+		<a href="{{path("about")}}">
+			About Page
+		</a>
+
+	</main>
+{% endblock %}

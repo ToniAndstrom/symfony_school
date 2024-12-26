@@ -1,0 +1,45 @@
+{% extends "base.html.twig"%}
+
+{% block title %} Name Variation {% endblock %}
+
+{%  block body %}
+<main class="container">
+
+<div>
+<label class="label" for "component-name"> Enter your name </label>
+<form method="get" action="{{path("name_variation")}}">
+<input
+type="text"
+name="name"
+class="input"
+placeholder="Your name"
+id="your-name"
+autocomplete="off"
+/>
+</form>
+</div>
+
+{% if name %}
+<h2>Results for "{{name}}"</h2>
+<table class="table" border="1">
+
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+
+{% for key , value in nameDetails %}
+    <tr>
+      <td>{{ key| replace({'_': ' '}) | title }}</td>
+      <td>{{ value }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+
+</main>
+{% endblock %}
+

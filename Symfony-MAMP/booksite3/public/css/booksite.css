@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+form{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 30rem;
+    margin-bottom: 7rem;
+    padding: 2rem;
+}
+input, select{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+select{
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+table{
+   
+    background-color: black;
+    color: black;
+}
+th, td{
+     text-align: center;
+    width: 3rem;
+    height: 2rem;
+    padding: 2rem;
+}
+tr{
+    background-color: white;
+}
+h1{
+    margin: 2rem;
+}
+button{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 10px;
+}
